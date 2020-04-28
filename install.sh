@@ -100,7 +100,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/acillsadank/install/master/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by JandaBaper</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by RizwanArifFirmansyah</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/acillsadank/install/master/vps.conf"
 
 # install openvpn
