@@ -7,7 +7,8 @@
 <br>OpenVPNSSL: http://myip:81/openvpnssl.ovpn
 <br>OpenVPN : TCP 1194 (client config : http://myip:81/client.ovpn)
 <br>badvpn : badvpn-udpgw port 7200
+<br>nginx : 81
 
 Auto-Installer
 
-apt-get update && apt-get upgrade -y && wget https://raw.githubusercontent.com/acillsadank/install/master/install.sh && chmod +x install.sh && bash install.sh
+apt-get update && apt-get upgrade -y && wget https://raw.githubusercontent.com/acillsadank/install/master/install.sh && chmod +x install.sh && ./install.sh

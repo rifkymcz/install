@@ -100,7 +100,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/acillsadank/install/master/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by JandaBaper</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by KadallFamily</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/acillsadank/install/master/vps.conf"
 
 # install openvpn
@@ -108,13 +108,13 @@ apt-get -y install openvpn easy-rsa openssl
 cp -r /usr/share/easy-rsa/ /etc/openvpn
 mkdir /etc/openvpn/easy-rsa/keys
 sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="ID"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="JAWABARAT"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="Purwakarta"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="AcillSadank"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="JABAR"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="PURWAKARTA"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="KadallFamily"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="acill.sadank@gmail.com"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="AcillSadank"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="AcillSadank"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_OU=changeme|export KEY_OU="AcillSadank"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="KadallFamily"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="KadallFamily"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_OU=changeme|export KEY_OU="KadallFamily" |' /etc/openvpn/easy-rsa/vars
 
 # Create Diffie-Helman Pem
 openssl dhparam -out /etc/openvpn/dh2048.pem 2048
@@ -262,22 +262,22 @@ apt-get install -y libxml-parser-perl
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/acillsadank/install/master/menu.sh"
-wget -O edit "https://raw.githubusercontent.com/acillsadak/install/master/edit-ports.sh"
-wget -O edit-dropbear "https://raw.githubusercontent.com/acillsadak/install/master/edit-dropbear.sh"
-wget -O edit-openssh "https://raw.githubusercontent.com/acillsadak/install/master/edit-openssh.sh"
-wget -O edit-openvpn "https://raw.githubusercontent.com/acillsadak/install/master/edit-openvpn.sh"
-wget -O edit-squid3 "https://raw.githubusercontent.com/acillsadak/install/master/edit-squid3.sh"
-wget -O edit-stunnel4 "https://raw.githubusercontent.com/acillsadak/install/master/edit-stunnel4.sh"
-wget -O show-ports "https://raw.githubusercontent.com/acillsadak/install/master/show-ports.sh"
-wget -O usernew "https://raw.githubusercontent.com/acillsadak/install/master/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/acillsadak/install/master/trial.sh"
-wget -O delete "https://raw.githubusercontent.com/acillsadak/install/master/delete.sh"
-wget -O check "https://raw.githubusercontent.com/acillsadak/install/master/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/acillsadak/install/master/user-list.sh"
-wget -O restart "https://raw.githubusercontent.com/acillsadak/install/master/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/acillsadak/install/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/acillsadak/install/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/acillsadak/install/master/about.sh"
+wget -O edit "https://raw.githubusercontent.com/acillsadank/install/master/edit-ports.sh"
+wget -O edit-dropbear "https://raw.githubusercontent.com/acillsadank/install/master/edit-dropbear.sh"
+wget -O edit-openssh "https://raw.githubusercontent.com/acillsadank/install/master/edit-openssh.sh"
+wget -O edit-openvpn "https://raw.githubusercontent.com/acillsadank/install/master/edit-openvpn.sh"
+wget -O edit-squid3 "https://raw.githubusercontent.com/acillsadank/install/master/edit-squid3.sh"
+wget -O edit-stunnel4 "https://raw.githubusercontent.com/acillsadank/install/master/edit-stunnel4.sh"
+wget -O show-ports "https://raw.githubusercontent.com/acillsadank/install/master/show-ports.sh"
+wget -O usernew "https://raw.githubusercontent.com/acillsadank/install/master/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/acillsadank/install/master/trial.sh"
+wget -O delete "https://raw.githubusercontent.com/acillsadank/install/master/delete.sh"
+wget -O check "https://raw.githubusercontent.com/acillsadank/install/master/user-login.sh"
+wget -O member "https://raw.githubusercontent.com/acillsadank/install/master/user-list.sh"
+wget -O restart "https://raw.githubusercontent.com/acillsadank/install/master/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/acillsadank/install/master/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/acillsadank/install/master/info.sh"
+wget -O about "https://raw.githubusercontent.com/acillsadank/install/master/about.sh"
 
 chmod +x menu
 chmod +x edit
@@ -340,7 +340,7 @@ echo "Service"  | tee -a log-install.txt
 echo "-------"  | tee -a log-install.txt
 echo "OpenSSH  : 22"  | tee -a log-install.txt
 echo "Dropbear : 143, 443, 990"  | tee -a log-install.txt
-echo "SSL      : 444" | tee -a log-install.txt
+echo "SSL      : 444"  | tee -a log-install.txt
 echo "OpenVPNSSL : 442"  | tee -a log-install.txt
 echo "Squid3   : 80, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "SSL      : http://$MYIP:81/ssl.conf"  | tee -a log-install.txt

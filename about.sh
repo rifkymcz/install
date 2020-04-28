@@ -12,7 +12,7 @@ echo -e "* Fornesia" | lolcat
 echo -e "* Rzengineer" | lolcat
 echo -e "* Fawzya" | lolcat
 echo -e ""
-echo -e "Mod by" | lolcat
+echo -e "Mod by Rizwan Arif Firmansyah" | lolcat
 echo -e ""
 echo -e "   ██   ██  █████  ██████   █████  ██  "
 echo -e "   ██  ██  ██   ██ ██   ██ ██   ██ ██          "
@@ -25,5 +25,6 @@ echo -e " ██      ██   ██ ████  ██
 echo -e " █████   ███████ ██ ████ ██ ██ ██     ████   "
 echo -e " ██      ██   ██ ██  ██  ██ ██ ██      ██    "
 echo -e " ██      ██   ██ ██      ██ ██ ███████ ██    "
-echo -e "                                      The Big Kadall Family Grup™" | lolcatecho -e ""
+echo -e "                                      The Big Kadall Family Grup™" | lolcat
+echo -e ""
 echo -e "acill.sadank@gmail.com" | lolcat

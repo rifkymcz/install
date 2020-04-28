@@ -23,6 +23,7 @@ echo -e "Config SSL: http://$IP:81/ssl.conf" | lolcat
 echo -e "Config OpenVPNSSL: http://$IP:81/openvpnssl.ovpn" | lolcat
 echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn" | lolcat
 echo -e "badvpn: badvpn-udpgw port 7200" | lolcat
+echo -e "nginx: 81" | lolcat
 echo -e "=============================" | lolcat
 echo -e "Expiration: $exp" | lolcat
 echo -e "=============================" | lolcat
