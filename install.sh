@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 #
 # Original script by fornesia, rzengineer and fawzya 
 # Mod by Janda Baper
@@ -244,7 +244,7 @@ apt-get -y install fail2ban
 # install ddos deflate
 cd
 apt-get -y install dnsutils dsniff
-wget https://raw.githubusercontent.com/janda09/install/master/ddos-deflate-master.zip
+wget https://raw.githubusercontent.com/acillsadank/install/master/ddos-deflate-master.zip
 unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
