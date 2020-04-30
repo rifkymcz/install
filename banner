@@ -1,0 +1,19 @@
+#!/bin/bash
+#About this script
+
+clear
+echo -e ""
+echo -e "   ██   ██  █████  ██████   █████  ██  " | lolcat
+echo -e "   ██  ██  ██   ██ ██   ██ ██   ██ ██          " | lolcat
+echo -e "   █████   ███████ ██   ██ ███████ ██           " | lolcat
+echo -e "   ██  ██   ██   ██ ██   ██ ██   ██ ██   " | lolcat
+echo -e "   ██   ██ ██   ██ ██████  ██   ██ ███████     " | lolcat
+echo -e ""
+echo -e " ███████  █████  ███    ███ ██ ██   ██    ██ " | lolcat
+echo -e " ██      ██   ██ ████  ████ ██ ██    ██  ██  " | lolcat
+echo -e " █████   ███████ ██ ████ ██ ██ ██     ████   " | lolcat
+echo -e " ██      ██   ██ ██  ██  ██ ██ ██      ██    " | lolcat
+echo -e " ██      ██   ██ ██      ██ ██ ███████ ██    " | lolcat
+echo -e "                                      The Big Kadall Family Grup™" | lolcat
+echo -e ""
+echo -e " No Wa 083145968517" | lolcat
