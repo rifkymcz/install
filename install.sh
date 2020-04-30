@@ -77,16 +77,16 @@ apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip un
 
 echo "clear" >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "   ██   ██  █████  ██████   █████  ██  "' >> .bashrc
-echo 'echo -e "   ██  ██  ██   ██ ██   ██ ██   ██ ██          "' >> .bashrc
-echo 'echo -e "   █████   ███████ ██   ██ ███████ ██           "' >> .bashrc
-echo 'echo -e "   ██  ██   ██   ██ ██   ██ ██   ██ ██   "' >> .bashrc
-echo 'echo -e "   ██   ██ ██   ██ ██████  ██   ██ ███████     "' >> .bashrc
+echo 'echo -e "   ██   ██  █████  ██████   █████  ██  " | lolcat' >> .bashrc
+echo 'echo -e "   ██  ██  ██   ██ ██   ██ ██   ██ ██          " | lolcat ' >> .bashrc
+echo 'echo -e "   █████   ███████ ██   ██ ███████ ██           " | lolcat ' >> .bashrc
+echo 'echo -e "   ██  ██   ██   ██ ██   ██ ██   ██ ██   " l lolcat ' >> .bashrc
+echo 'echo -e "   ██   ██ ██   ██ ██████  ██   ██ ███████     " | lolcat ' >> .bashrc
 echo 'echo -e " "'
-echo 'echo -e "███████  █████  ███    ███ ██ ██   ██    ██ "' >> .bashrc
-echo 'echo -e "██      ██   ██ ████  ████ ██ ██    ██  ██  "' >> .bashrc
-echo 'echo -e "█████   ███████ ██ ████ ██ ██ ██     ████   "'>> .bashrc
-echo 'echo -e "██      ██   ██ ██  ██  ██ ██ ██      ██    "' >> .bashrc
+echo 'echo -e "███████  █████  ███    ███ ██ ██   ██    ██ " | lolcat ' >> .bashrc
+echo 'echo -e "██      ██   ██ ████  ████ ██ ██    ██  ██  " | lolcat ' >> .bashrc
+echo 'echo -e "█████   ███████ ██ ████ ██ ██ ██     ████   " | lolcat ' >> .bashrc
+echo 'echo -e "██      ██   ██ ██  ██  ██ ██ ██      ██    " | lolcat ' >> .bashrc
 echo 'echo -e "██      ██   ██ ██      ██ ██ ███████ ██    "' >> .bashrc
 echo 'echo -e "                                      The Big Kadall FamilyGroup™" | lolcat' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
@@ -110,11 +110,11 @@ mkdir /etc/openvpn/easy-rsa/keys
 sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="ID"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="JABAR"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="PURWAKARTA"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="KadallFamily"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="RizwanArifFirmansyah"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="acill.sadank@gmail.com"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="KadallFamily"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="KadallFamily"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_OU=changeme|export KEY_OU="KadallFamily" |' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="RizwanArifFirmansyah"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="RizwanArifFirmansyah"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_OU=changeme|export KEY_OU="RizwanArifFirmansyah" |' /etc/openvpn/easy-rsa/vars
 
 # Create Diffie-Helman Pem
 openssl dhparam -out /etc/openvpn/dh2048.pem 2048
@@ -347,7 +347,6 @@ echo "SSL      : http://$MYIP:81/ssl.conf"  | tee -a log-install.txt
 echo "OpenVPNSSL: http://$MYIP:81/openvpnssl.ovpn"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7200"  | tee -a log-install.txt
-echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
