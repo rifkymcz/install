@@ -251,7 +251,7 @@ cd ddos-deflate-master
 rm -rf /root/ddos-deflate-master.zip
 
 # banner /etc/bnr
-wget -O /etc/banner.txt "https://raw.githubusercontent.com/acillsadank/install/master/banner.txt"
+wget -O /etc/banner.txt "https://raw.githubusercontent.com/rifkymcz/install/master/banner.txt"
 sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
 
